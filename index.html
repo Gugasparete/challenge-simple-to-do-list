@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>Lista de Tarefas</h1>
+
+        <label for="name">Nome da Tarefa: </label>
+        <input type="text" id="name"> <br>
+
+        <label for="descricao">Descriçao: </label>
+        <input type="text" id="descricao"><br>
+
+        <label for="dataFinal">Data Final: </label>
+        <input type="date" id="dataFinal"> <br>        
+
+        <button type="submit" onclick="addToList()">Enviar</button>
+        <span id="errorM"></span>
+    </div>
+    <div id="divlist">
+        <table border="1">
+            <thead>
+                <tr id="title">
+                    <th>Nome</th>
+                    <th>Descricao</th>
+                    <th>Data Inicio</th>
+                    <th>Data Final</th>
+                    <th>Terminada?</th>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody id="tBody">
+                <tr id="myTr">
+
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+    <script src="js.js"></script>
+</body>
+
+</html>
